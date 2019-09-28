@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Quiz Form</title>
+</head>
+
+<body>
+    <div class="inner-header">
+        <% include partials/innerHeader %>
+    </div>
+    <div>
+        <form action="/quizs/<%= quizId %>/new" , method="POST">
+            <div class="question-form-question">
+                <input type="text" name="title" placeholder="Enter the Question">
+            </div>
+
+            <div class="question-form-question">
+                <span>a)</span>
+                <input type="text" name="answer1">
+                <input type="radio" name="answer" value="answer1">
+            </div>
+
+            <div class="question-form-question">
+                <span>b)</span>
+                <input type="text" name="answer2">
+                <input type="radio" name="answer" value="answer2">
+            </div>
+
+            <div class="question-form-question">
+                <span>c)</span>
+                <input type="text" name="answer3">
+                <input type="radio" name="answer" value="answer3">
+            </div>
+
+            <div class="question-form-question">
+                <span>d)</span>
+                <input type="text" name="answer4">
+                <input type="radio" name="answer" value="answer4">
+            </div>
+            <div class="question-form-bt" >
+                <input type="submit" value="Save Question">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

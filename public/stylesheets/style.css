@@ -1,0 +1,325 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* css for header */
+
+.header-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color:#fff;
+}
+.header-left{
+  margin: 20px;
+  text-align: left;
+}
+.header-right{
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-around
+}
+
+.header-input{
+  margin: 10px;
+}
+
+.mail{
+  height: 30px;
+  border-radius: 5px;
+}
+
+.pwd{
+  height: 30px;
+  border-radius: 5px;
+}
+
+.bt{
+background-color: #f3973e;
+border-radius: 5px;
+border: none;
+}
+.bt:hover{
+  background-color:  #ee5535;
+}
+
+
+/* inner header */
+
+.inner-header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.home{
+
+}
+
+.logout-btn{
+
+}
+
+.dashboard-footer{
+  display: grid;
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-footer-1, .dashboard-footer-3, .dashboard-footer-2{
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+/* css for registration form */
+
+.regBody{
+  display: grid;
+  background-image: linear-gradient(to right, #ff5722, #ff9800);
+  /* margin-top: 150px !important; */
+
+}
+
+.regContainer{
+  margin: 20px;
+  padding: 20px;
+}
+
+.row-center{
+  display: flex;
+  width: 100%;
+}
+.register-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* float: left; */
+  color: #fff;
+  padding: 30px;
+}
+
+.col-md-5 register-left{
+  justify-content: center;
+}
+
+
+.register-left p{
+  padding: 20px 20px 0;
+}
+
+.col-md-7{
+  float:right;
+}
+.register-left .btn-primary{
+  border-radius: 1.5rem;
+  border: none;
+  width: 120px;
+  background: #f8f8f8;
+  font-weight: 600;
+  color: #555;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.register-left .btn-primary:hover{
+  background: #000;
+}
+
+.register-right{
+  border: none;
+  background: #f8f8f8;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  padding: 30px;
+  margin-left: 230px;
+}
+
+.register-right h2{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+h3{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+
+.register-form{
+  padding: 30px;
+}
+
+.register-right .btn-primary{
+  float: right;
+  border-radius: 1.5rem;
+  border: none;
+  width: 120px;
+  background: #ff9800;
+  font-weight: 600;
+  color: #555;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.register-right .btn-primary:hover{
+  background: #ff5722;
+
+}
+
+/* css for login form */
+
+.loginbody{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+};
+
+.loginbox{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, 50%);
+  background: #191919;
+}
+
+.loginbox input[type = "email"], .loginbox input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 15px 10px;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  transition: 0.25s;
+}
+
+.loginbox input[type = "email"]:focus, .loginbox input[type = "password"]{
+  width: 300px;
+  border-color: #3498db;
+}
+
+.loginbox input[type = "submit"]{
+  border: 0;
+  width: 100px;
+  height: 30px;
+  background: none;
+  /* display: block; */
+  align-items: center;
+  /* margin: 20px, auto; */
+  text-align: center;
+  border: 2px solid #2ecc71;
+  /* padding: 10px 10px; */
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.loginbox input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+.login-submit{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+/* css for footer */
+
+.footer-container{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+
+
+.footer-left{
+  margin: 10px;
+  width: 50%;
+}
+.footer-link{
+  margin: 5px;
+}
+
+.footer-right{
+  display: flex;
+  margin: 10px;
+  width: 50%;
+  margin-top: 40px;
+  justify-content: center;
+}
+.footer-right p:first-child{
+  margin-right: 20px;
+}
+
+.options{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 400px;
+}
+
+
+/* my quiz bottom */
+
+.my-quiz-bottem{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* single question css */
+
+.single-question{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+}
+.single-question-a{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* question form css */
+.question-form-question{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+.question-form-bt{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

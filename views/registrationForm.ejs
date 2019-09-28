@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body class="regBody">
+    <div class="header">
+        <% include partials/header %>
+    </div>
+
+    <div class="regContainer">
+        <div class="row">
+            <div class="col-md-10 offset=md=1">
+                <div class="row-center">
+                    <div class="col-md-5 register-left">
+                        <h3>
+                            Join Us
+                        </h3>
+                        <p>
+                            Subscribe for more Quiz
+                        </p>
+                        <button type="button" class="btn btn-primary-left">
+                            about us
+                        </button>
+                    </div>
+
+                    <div class="col-md-7 register-right">
+                        <h2>
+                            Register here
+                        </h2>
+                        <h3>Create your new account</h3>
+                        <h4>It's free to check your knowladge</h4>
+                        <form action="/users/new" method="POST">
+                            <div class="register-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="firstName"
+                                        placeholder="Enter your first name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Enter your email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password"
+                                        placeholder="Enter your password">
+                                </div>
+                                <p><input type="checkbox" name="terms"> I agree to terms and conditions and privacy policy</p>
+                                <a href="./"><input type="submit" class="btn btn-primary" value="REGISTER"></a>
+                                
+                                <!-- <button type="button" class="btn btn-primary">Register</button> -->
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <% include partials/footer %>
+    </div>
+
+</body>
+
+</html>
